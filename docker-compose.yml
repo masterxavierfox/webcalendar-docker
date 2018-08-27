@@ -2,7 +2,7 @@ version: '3.4'
 
 services:
   webcalendar:
-    image: skiychan/nginx-php7
+    image: skiychan/nginx-php7:latest
     ports:
       - "8080:80"
     volumes:
