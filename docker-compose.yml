@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  webcalendar:
+    image: skiychan/nginx-php7
+    ports:
+      - "8080:80"
+    volumes:
+      - `pwd`/webcalendar:/data/www/webcalendar
+      - `pwd`/data:/web/data
